@@ -1,9 +1,9 @@
 function solve(array) {
     let sum = 0;
 
-    array.forEach(element => {
-        sum += element;
-    });
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
 
     console.log(sum);
 }
