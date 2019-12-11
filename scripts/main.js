@@ -1,17 +1,17 @@
 function solve(array) {
     let sum = 0;
-    let diff = 0;
+    let product = 1;
 
     for (let i = 0; i < array.length; i++) {
         sum += array[i];
     }
 
-    array.forEach(element => {
-        diff -= element;
-    });
+    for (const el of array) {
+        product *= el;        
+    }
 
     console.log(sum);
-    console.log(diff);
+    console.log(product);
 }
 
 solve([11, 22, 33, 44]);
